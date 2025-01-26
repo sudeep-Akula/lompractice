@@ -12,12 +12,6 @@ public class UserService {
 UserRepo repo;
 
    public User save(User user){
-
-//       User user1 = new User();
-//       user1.setName(userdto.getName());
-//       user1.setEmail(userdto.getEmail());
-//       user1.setMobile(userdto.getMobile());
-//       user1.setPassword(userdto.getPassword());
        repo.save(user);
        return user;
    }
