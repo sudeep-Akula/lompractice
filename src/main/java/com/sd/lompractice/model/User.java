@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 
 @Entity
-@Table(name = "user1")
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -18,8 +18,7 @@ import org.springframework.stereotype.Component;
 public class User {
 
    @Id
-   @GeneratedValue(generator = "userSeq" , strategy = GenerationType.AUTO)
-           @SequenceGenerator(name = "userSeq", sequenceName = "userSeq")
+   @GeneratedValue
    int id;
    String name;
    String mobile;
